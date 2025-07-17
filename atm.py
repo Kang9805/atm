@@ -14,13 +14,14 @@ while True:
     if num == '4': # 4번은 종료 기능
         break # while문 탈출
     
-    if num == '1':
-        pass
+    if num == '1': #입금 기능 구현 -> feat/deposit 브랜치에서 작업
+       deposit_amount = int(input('입금할 금액을 입력해주세요: ')) #str:5000 -> int:5000
+       balance += deposit_amount # balance = balance + deposit_amount
+       print(f'입금하신 금액은{deposit_amount}원이고, 현재 잔액은 {balance}원 입니다.')    
     
     if num == '2':
         pass
-    
     if num == '3':
         pass
 
-print(f'서비스를 종료합니다. 햔재 잔액은 {balance}')
+print(f'서비스를 종료합니다. 햔재 잔액은 {balance}원 입니다.')
